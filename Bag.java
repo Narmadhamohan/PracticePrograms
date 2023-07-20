@@ -25,7 +25,7 @@ public class Bag {
 		Bag bagB = new Bag("Veggies", "Carrot","Radish","Potato");
 		
 		List<Bag> bags = Arrays.asList(bagA,bagB);
-		System.out.println("-------- Without map(function)-----------");
+		System.out.println("-------- With map(function)-----------");
 		//List<Bag> bags = null;
 		List<List<String>> bagList =	bags.stream()
 				.map(Bag::getItems)
